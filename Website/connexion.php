@@ -63,14 +63,14 @@
   <div class="container">
     <div class="row">
         <div class="col-md-4 mb-5">
-            <form action="../api/CRUD/offer/create.php" method="get">
+            <form action="responseConnexion.php" method="post">
                 <div class="form-group">
                     <label for="formGroupExampleInput">Username</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" name="Name" placeholder="UserName">
+                    <input type="text" class="form-control" id="formGroupExampleInput" name="username" placeholder="UserName">
                 </div>          
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Mot de passe</label>
-                  <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Mot de passe">
+                  <input type="password" class="form-control" id="exampleFormControlInput1" name="password" placeholder="Mot de passe">
                 </div>
                 <button class="btn btn-primary" type="submit">Se connecter</button>
                 <button class="btn btn-primary" type="button">Annuler</button>

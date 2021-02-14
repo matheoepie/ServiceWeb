@@ -63,26 +63,26 @@
   <div class="container">
     <div class="row">
         <div class="col-md-4 mb-5">
-            <form action="../api/CRUD/offer/create.php" method="post">
+            <form action="sendOffer.php" method="post">
                 <div class="form-group">
                     <label for="formGroupExampleInput">Nom</label>
                     <input type="text" class="form-control" id="formGroupExampleInput" name="Name" placeholder="Votre Nom..">
                 </div>          
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Référence</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Référence">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" name="Reference" placeholder="Référence">
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1">Description</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" name="Description" rows="3"></textarea>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Période</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Période">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" name="Periode" placeholder="Période">
                 </div>       
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Date de début</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="AAAA-MM-JJ">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" name="Begin_date" placeholder="AAAA-MM-JJ">
                 </div>  
                 <button class="btn btn-primary" type="submit">Enregistrer</button>
                 <button class="btn btn-primary" type="button">Annuler</button>
