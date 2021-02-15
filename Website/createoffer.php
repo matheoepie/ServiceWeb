@@ -66,25 +66,25 @@
             <form action="sendOffer.php" method="post">
                 <div class="form-group">
                     <label for="formGroupExampleInput">Nom</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" name="Name" placeholder="Votre Nom..">
+                    <input type="text" class="form-control" id="1" name="Name" placeholder="Votre Nom..">
                 </div>          
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Référence</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" name="Reference" placeholder="Référence">
+                  <input type="text" class="form-control" id="2" name="Reference" placeholder="Référence">
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1">Description</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" name="Description" rows="3"></textarea>
+                  <textarea class="form-control" id="3" name="Description" rows="3"></textarea>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Période</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" name="Periode" placeholder="Période">
+                  <input type="text" class="form-control" id="4" name="Periode" placeholder="Période">
                 </div>       
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Date de début</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" name="Begin_date" placeholder="AAAA-MM-JJ">
+                  <input type="text" class="form-control" id="5" name="Begin_date" placeholder="AAAA-MM-JJ">
                 </div>  
-                <button class="btn btn-primary" type="submit">Enregistrer</button>
+                <button class="btn btn-primary" id="Submit" type="submit">Enregistrer</button>
                 <button class="btn btn-primary" type="button">Annuler</button>
               </form>
 

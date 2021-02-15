@@ -72,7 +72,7 @@
                   <label for="exampleFormControlInput1">Mot de passe</label>
                   <input type="password" class="form-control" id="exampleFormControlInput1" name="password" placeholder="Mot de passe">
                 </div>
-                <button class="btn btn-primary" type="submit">Se connecter</button>
+                <button class="btn btn-primary" id="Submit" type="submit">Se connecter</button>
                 <button class="btn btn-primary" type="button">Annuler</button>
               </form>
 

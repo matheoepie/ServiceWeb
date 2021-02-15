@@ -35,10 +35,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="createoffer.php">Déposer une offre</a>
+            <a class="nav-link" id="createoffer" href="createoffer.php">Déposer une offre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="connexion.php">Se connecter</a>
+            <a class="nav-link" id="connexion" href="connexion.php">Se connecter</a>
           </li>
         </ul>
       </div>

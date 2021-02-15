@@ -31,7 +31,7 @@ $err = curl_error($curl);
 
 curl_close($curl);
 $response = json_decode($response, true); //because of true, it's in an array 
-$_SESSION['token'] = $response
+$_SESSION['token'] = $response;
 header('Location: index.php');      
 
 
