@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>MégaCasting</title>
+  <title>Paul Emploie</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,8 +22,8 @@
 
 
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbarPersonnalSettings">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbarPersonnalSettings">
     <div class="container">
       <a class="navbar-brand" href="#">Paul emploie</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,20 +31,36 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">Accueil</a>
-          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="createoffer.php">Déposer une offre
-            <span class="sr-only">(current)</span>
+            <a class="nav-link" href="index.php">Accueil
+              <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="connexion.php">Se connecter</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="creation.php">Créer un compte</a>
-          </li>
+          <?php
+session_start();
+if (!empty($_SESSION['token']))
+{
+  echo ("
+  <li class="."nav-item".">
+  <a class="."nav-link"." href="."createoffer.php".">Déposer une offre</a>
+</li>
+<li class="."nav-item".">
+<a class="."nav-link"." href="."logout.php".">Déconnexion</a>
+</li>
+  ");
+}
+else
+{
+  echo ("
+<li class="."nav-item".">
+<a class="."nav-link"." href="."connexion.php".">Se connecter</a>
+</li>
+<li class="."nav-item".">
+<a class="."nav-link"." href="."creation.php".">Créer un compte</a>
+</li>
+  ");
+}
+?>
         </ul>
       </div>
     </div>
@@ -89,7 +105,10 @@
                 </div>  
                 <button class="btn btn-primary" type="submit">Enregistrer</button>
                 <button class="btn btn-primary" type="button">Annuler</button>
+                
               </form>
+              <label for="exampleFormControlInput1"><?php session_start(); echo("id".$_SESSION['id']." !");?></label>
+              <label for="exampleFormControlInput1"><?php echo("id".$_SESSION['token']." !");?></label>
 
         </div>
         <div class="col-md-4 mb-5">            

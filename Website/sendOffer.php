@@ -1,4 +1,5 @@
 <?php
+
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
@@ -13,8 +14,8 @@ curl_setopt_array($curl, array(
     'Description' => $_POST['Description'],
     'Begin_date' => $_POST['Begin_date'],
     'Period' => $_POST['Periode'],
-    'Publication_date' => date('Y-m-d')
-
+    'Publication_date' => date('Y-m-d'),
+    'user_id' => $_SESSION['id']
   ), 
   CURLOPT_HTTPHEADER => array(
     "cache-control: no-cache"

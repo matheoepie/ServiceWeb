@@ -34,15 +34,31 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="createoffer.php">Déposer une offre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="connexion.php">Se connecter</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="creation.php">Créer un compte</a>
-          </li>
+          <?php
+session_start();
+if (!empty($_SESSION['token']))
+{
+  echo ("
+  <li class="."nav-item".">
+  <a class="."nav-link"." href="."createoffer.php".">Déposer une offre</a>
+</li>
+<li class="."nav-item".">
+<a class="."nav-link"." href="."logout.php".">Déconnexion</a>
+</li>
+  ");
+}
+else
+{
+  echo ("
+<li class="."nav-item".">
+<a class="."nav-link"." href="."connexion.php".">Se connecter</a>
+</li>
+<li class="."nav-item".">
+<a class="."nav-link"." href="."creation.php".">Créer un compte</a>
+</li>
+  ");
+}
+?>
         </ul>
       </div>
     </div>

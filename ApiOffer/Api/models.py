@@ -10,7 +10,7 @@ class Offer(models.Model):
     Begin_date = models.DateField()
     Period = models.CharField(max_length=50)
     Publication_date = models.DateField()
-    User_id = models.IntegerField()
+    User_id = models.CharField(max_length=500)
 
     def __str__(self):
         return self.Name
