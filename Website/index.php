@@ -97,7 +97,7 @@ $err = curl_error($curl);
 curl_close($curl);
 $response = json_decode($response, true); //because of true, it's in an array
 foreach ($response as $v) {
-    echo '<div class="col-md-4 mb-5"><div class="card h-100"><div class="card-body"><h4 class="card-title">'.$v['Name'].'</h4><p class="card-text">'.$v['Description'].'</p></div><div class="card-footer"><a href="#" class="btn btn-primary">Find Out More!</a></div></div></div>';
+    echo '<div class="col-md-4 mb-5"><div class="card h-100"><div class="card-body"><h4 class="card-title">'.$v['Name'].'</h4><p class="card-text">'.$v['Description'].'</p></div><div class="card-footer"><a href="#" class="btn btn-primary">Détail</a></div></div></div>';
 }
 
 

@@ -105,10 +105,7 @@ else
                 </div>  
                 <button class="btn btn-primary" type="submit">Enregistrer</button>
                 <button class="btn btn-primary" type="button">Annuler</button>
-                
               </form>
-              <label for="exampleFormControlInput1"><?php session_start(); echo("id".$_SESSION['id']." !");?></label>
-              <label for="exampleFormControlInput1"><?php echo("id".$_SESSION['token']." !");?></label>
 
         </div>
         <div class="col-md-4 mb-5">            
