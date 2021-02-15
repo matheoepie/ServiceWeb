@@ -43,7 +43,7 @@ if (!empty($_SESSION['token']))
   <a class="."nav-link"." href="."createoffer.php".">Déposer une offre</a>
 </li>
 <li class="."nav-item".">
-<a class="."nav-link"." href="."logout.php".">Déconnexion</a>
+<a class="."nav-link"." id=\"logout\" href="."logout.php".">Déconnexion</a>
 </li>
   ");
 }
@@ -51,10 +51,10 @@ else
 {
   echo ("
 <li class="."nav-item".">
-<a class="."nav-link"." href="."connexion.php".">Se connecter</a>
+<a class="."nav-link"." id=\"connect\" href="."connexion.php".">Se connecter</a>
 </li>
 <li class="."nav-item".">
-<a class="."nav-link"." href="."creation.php".">Créer un compte</a>
+<a class="."nav-link"." id=\"create\" href="."creation.php".">Créer un compte</a>
 </li>
   ");
 }
