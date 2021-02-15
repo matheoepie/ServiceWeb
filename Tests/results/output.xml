@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210215 14:20:27.259" rpa="false">
+<suite id="s1" name="Tests Offres" source="C:\wamp\www\API_Projet\ServiceWeb\Tests\tests_offres.robot">
+<test id="s1-t1" name="Test ajout offre">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://localhost/API_Projet/ServiceWeb/Website/index.php</arg>
+</arguments>
+<msg timestamp="20210215 14:20:27.432" level="INFO">Opening browser 'firefox' to base url 'http://localhost/API_Projet/ServiceWeb/Website/index.php'.</msg>
+<msg timestamp="20210215 14:20:27.434" level="INFO">Firefox driver log is always forced to to: C:\wamp\www\API_Projet\ServiceWeb\Tests\results\geckodriver-1.log</msg>
+<status status="PASS" starttime="20210215 14:20:27.432" endtime="20210215 14:20:32.162"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>class=nav-link</arg>
+</arguments>
+<status status="PASS" starttime="20210215 14:20:32.169" endtime="20210215 14:20:32.241"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=connect</arg>
+</arguments>
+<msg timestamp="20210215 14:20:32.242" level="INFO">Clicking element 'id=connect'.</msg>
+<status status="PASS" starttime="20210215 14:20:32.242" endtime="20210215 14:20:32.330"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=formGroupExampleInput</arg>
+<arg>667gang</arg>
+</arguments>
+<msg timestamp="20210215 14:20:32.336" level="INFO">Typing text '667gang' into text field 'id=formGroupExampleInput'.</msg>
+<status status="PASS" starttime="20210215 14:20:32.335" endtime="20210215 14:20:32.395"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=exampleFormControlInput1</arg>
+<arg>667gang</arg>
+</arguments>
+<msg timestamp="20210215 14:20:32.396" level="INFO">Typing text '667gang' into text field 'id=exampleFormControlInput1'.</msg>
+<status status="PASS" starttime="20210215 14:20:32.395" endtime="20210215 14:20:32.437"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=btn-primary</arg>
+</arguments>
+<msg timestamp="20210215 14:20:32.437" level="INFO">Clicking element 'class=btn-primary'.</msg>
+<status status="PASS" starttime="20210215 14:20:32.437" endtime="20210215 14:20:32.676"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=createOffer</arg>
+</arguments>
+<msg timestamp="20210215 14:20:32.677" level="INFO">Clicking element 'id=createOffer'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210215 14:20:32.945" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210215 14:20:32.705" endtime="20210215 14:20:32.945"></status>
+</kw>
+<msg timestamp="20210215 14:20:32.955" level="FAIL">Element with locator 'id=createOffer' not found.</msg>
+<status status="FAIL" starttime="20210215 14:20:32.676" endtime="20210215 14:20:32.955"></status>
+</kw>
+<doc>Connexion et ajout d'une offre</doc>
+<status status="FAIL" starttime="20210215 14:20:27.432" endtime="20210215 14:20:32.955" critical="yes">Element with locator 'id=createOffer' not found.</status>
+</test>
+<doc>Test offres</doc>
+<status status="FAIL" starttime="20210215 14:20:27.260" endtime="20210215 14:20:32.961"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Tests Offres">Tests Offres</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210215 14:20:27.280" level="ERROR">Error in file 'C:\wamp\www\API_Projet\ServiceWeb\Tests\tests_offres.robot' on line 11: Importing test library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\damie\AppData\Local\Programs\Python\Python39\Scripts\robot.exe
+  c:\users\damie\appdata\local\programs\python\python39\python39.zip
+  c:\users\damie\appdata\local\programs\python\python39\DLLs
+  c:\users\damie\appdata\local\programs\python\python39\lib
+  c:\users\damie\appdata\local\programs\python\python39
+  C:\Users\damie\AppData\Roaming\Python\Python39\site-packages
+  c:\users\damie\appdata\local\programs\python\python39\lib\site-packages</msg>
+</errors>
+</robot>

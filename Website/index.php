@@ -40,7 +40,7 @@ if (!empty($_SESSION['token']))
 {
   echo ("
   <li class="."nav-item".">
-  <a class="."nav-link"." href="."createoffer.php".">Déposer une offre</a>
+  <a class="."nav-link"." id=\"createOffer\" href="."createoffer.php".">Déposer une offre</a>
 </li>
 <li class="."nav-item".">
 <a class="."nav-link"." id=\"logout\" href="."logout.php".">Déconnexion</a>
