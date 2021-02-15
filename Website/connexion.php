@@ -42,6 +42,9 @@
             <span class="sr-only">(current)</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="creation.php">Créer un compte</a>
+          </li>
         </ul>
       </div>
     </div>

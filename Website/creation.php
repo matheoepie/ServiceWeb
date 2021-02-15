@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Paul emploie</title>
+  <title>MégaCasting</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +17,9 @@
   <link href="css/business-frontpage.css" rel="stylesheet">
 
 </head>
+
 <body>
+
 
 
   <!-- Navigation -->
@@ -29,19 +31,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.php">Accueil
-              <span class="sr-only">(current)</span>
-            </a>
+          <li class="nav-item">
+            <a class="nav-link" href="index.php">Accueil</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="createoffer.php">Déposer une offre</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="connexion.php">Se connecter</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="connexion.php">Se connecter
+            <span class="sr-only">(current)</span>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="creation.php">Créer un compte</a>
+            <span class="sr-only">(current)</span>
           </li>
         </ul>
       </div>
@@ -61,31 +64,37 @@
     </div>
   </header>
 
-<?php
-$curl = curl_init();
+  <div class="container">
+    <div class="row">
+        <div class="col-md-4 mb-5">
+            <form action="responseConnexion.php" method="post">
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Username</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" name="username" placeholder="UserName">
+                </div>          
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Mot de passe</label>
+                  <input type="password" class="form-control" id="exampleFormControlInput1" name="password" placeholder="Mot de passe">
+                </div>
+                <button class="btn btn-primary" type="submit">Créer un compte</button>
+                <button class="btn btn-primary" type="button">Annuler</button>
+              </form>
 
-curl_setopt_array($curl, array(
-  CURLOPT_URL => "http://127.0.0.1:8000/Offers/",
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_TIMEOUT => 30,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => "GET",
-  CURLOPT_HTTPHEADER => array(
-    "cache-control: no-cache"
-  ),
-));
+        </div>
+        <div class="col-md-4 mb-5">            
+        </div>
+        
 
-$response = curl_exec($curl);
-$err = curl_error($curl);
+    </div>
+    
+  </div>
 
-curl_close($curl);
-$response = json_decode($response, true); //because of true, it's in an array
-foreach ($response as $v) {
-    echo '<div class="col-md-4 mb-5"><div class="card h-100"><div class="card-body"><h4 class="card-title">'.$v['Name'].'</h4><p class="card-text">'.$v['Description'].'</p></div><div class="card-footer"><a href="#" class="btn btn-primary">Find Out More!</a></div></div></div>';
-}
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-
-?>
 </body>
-</html>
 
+</html>
+<?php
+?>

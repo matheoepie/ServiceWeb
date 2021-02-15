@@ -42,6 +42,9 @@
           <li class="nav-item">
             <a class="nav-link" href="connexion.php">Se connecter</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="creation.php">Créer un compte</a>
+          </li>
         </ul>
       </div>
     </div>
