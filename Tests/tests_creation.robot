@@ -1,7 +1,7 @@
 #pip install robotframework
 #pip install robotframework-seleniumlibrary
 
-#robot -d results tests_offres.robot
+#robot -d results tests_creation.robot
 
 *** Settings ***
 
